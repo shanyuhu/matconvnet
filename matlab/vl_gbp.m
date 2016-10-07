@@ -131,7 +131,6 @@ n = numel(net.layers) ;
 gpuMode = isa(x, 'gpuArray') ;
 
 res(1).x = x ;
-
 if doder
   res(n+1).dzdx = dzdy ;
   for i=n:-1:1
